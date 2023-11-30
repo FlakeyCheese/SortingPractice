@@ -44,6 +44,9 @@ namespace SortingPractice
         private void Form1_Load(object sender, EventArgs e)
         {
             loadUp();
+            comboBox1.Items.Add("Temp");
+            comboBox1.Items.Add("Current Item");
+            comboBox1.Items.Add("Pivot");
         }
 
         private void reset_Click(object sender, EventArgs e)
@@ -53,7 +56,7 @@ namespace SortingPractice
         }
         private void common_DragEnter(object sender, DragEventArgs e)
         {
-           
+
             if (e.Data.GetDataPresent(DataFormats.Text)) e.Effect = DragDropEffects.Copy;
         }
         private void common_DragDrop(object sender, DragEventArgs e)
@@ -68,8 +71,7 @@ namespace SortingPractice
             {
                 //invoke the drag and drop operation
                 DoDragDrop(lbl.Text, DragDropEffects.Copy);
-                if (radioButton1.Checked)
-                { lbl.Text = ""; }
+                if (radioButton1.Checked) { lbl.Text = ""; }
             }
 
         }
@@ -77,19 +79,19 @@ namespace SortingPractice
         private void index_toggle(object sender, MouseEventArgs e)
         {
             Label lbl = sender as Label;
-            if (lbl.ForeColor==Color.Black)
+            if (lbl.ForeColor == Color.Black)
             { lbl.ForeColor = Color.Red; }
-            else 
+            else
             { lbl.ForeColor = Color.Black; }
         }
 
         private void toggleBackground(object sender, MouseEventArgs e)
         {
-            Label lbl=null;
+            Label lbl = null;
             Button btn = sender as Button;
-             switch (btn.Name)
+            switch (btn.Name)
             {
-                 case "button1":
+                case "button1":
                     lbl = label1;
                     break;
                 case "button2":
@@ -122,6 +124,16 @@ namespace SortingPractice
             }
             if (lbl.BackColor == Color.Yellow) { lbl.BackColor = Color.Red; }
             else { lbl.BackColor = Color.Yellow; }
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void temp_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
