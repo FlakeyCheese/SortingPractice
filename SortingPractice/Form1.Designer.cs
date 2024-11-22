@@ -67,8 +67,12 @@ namespace SortingPractice
             radioButton1 = new System.Windows.Forms.RadioButton();
             label22 = new System.Windows.Forms.Label();
             comboBox1 = new System.Windows.Forms.ComboBox();
+            groupBox2 = new System.Windows.Forms.GroupBox();
+            radioButton3 = new System.Windows.Forms.RadioButton();
+            radioButton4 = new System.Windows.Forms.RadioButton();
             toBeSorted.SuspendLayout();
             groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -76,11 +80,12 @@ namespace SortingPractice
             label1.AllowDrop = true;
             label1.BackColor = System.Drawing.Color.Yellow;
             label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            label1.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label1.Location = new System.Drawing.Point(450, 18);
+            label1.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold);
+            label1.Location = new System.Drawing.Point(463, 18);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(105, 102);
+            label1.Size = new System.Drawing.Size(117, 102);
             label1.TabIndex = 0;
+            label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             label1.DragDrop += common_DragDrop;
             label1.DragEnter += common_DragEnter;
             label1.MouseDown += common_MouseDown;
@@ -90,11 +95,12 @@ namespace SortingPractice
             label2.AllowDrop = true;
             label2.BackColor = System.Drawing.Color.Yellow;
             label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            label2.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label2.Location = new System.Drawing.Point(42, 18);
+            label2.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold);
+            label2.Location = new System.Drawing.Point(55, 18);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(105, 102);
+            label2.Size = new System.Drawing.Size(117, 102);
             label2.TabIndex = 0;
+            label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             label2.DragDrop += common_DragDrop;
             label2.DragEnter += common_DragEnter;
             label2.MouseDown += common_MouseDown;
@@ -104,11 +110,12 @@ namespace SortingPractice
             label3.AllowDrop = true;
             label3.BackColor = System.Drawing.Color.Yellow;
             label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            label3.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label3.Location = new System.Drawing.Point(178, 18);
+            label3.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold);
+            label3.Location = new System.Drawing.Point(191, 18);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(105, 102);
+            label3.Size = new System.Drawing.Size(117, 102);
             label3.TabIndex = 0;
+            label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             label3.DragDrop += common_DragDrop;
             label3.DragEnter += common_DragEnter;
             label3.MouseDown += common_MouseDown;
@@ -118,11 +125,12 @@ namespace SortingPractice
             label4.AllowDrop = true;
             label4.BackColor = System.Drawing.Color.Yellow;
             label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            label4.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label4.Location = new System.Drawing.Point(586, 18);
+            label4.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold);
+            label4.Location = new System.Drawing.Point(599, 18);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(105, 102);
+            label4.Size = new System.Drawing.Size(117, 102);
             label4.TabIndex = 0;
+            label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             label4.DragDrop += common_DragDrop;
             label4.DragEnter += common_DragEnter;
             label4.MouseDown += common_MouseDown;
@@ -132,11 +140,12 @@ namespace SortingPractice
             label5.AllowDrop = true;
             label5.BackColor = System.Drawing.Color.Yellow;
             label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            label5.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label5.Location = new System.Drawing.Point(722, 18);
+            label5.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold);
+            label5.Location = new System.Drawing.Point(735, 18);
             label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(105, 102);
+            label5.Size = new System.Drawing.Size(117, 102);
             label5.TabIndex = 0;
+            label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             label5.DragDrop += common_DragDrop;
             label5.DragEnter += common_DragEnter;
             label5.MouseDown += common_MouseDown;
@@ -146,11 +155,12 @@ namespace SortingPractice
             label6.AllowDrop = true;
             label6.BackColor = System.Drawing.Color.Yellow;
             label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            label6.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label6.Location = new System.Drawing.Point(314, 18);
+            label6.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold);
+            label6.Location = new System.Drawing.Point(327, 18);
             label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(105, 102);
+            label6.Size = new System.Drawing.Size(117, 102);
             label6.TabIndex = 0;
+            label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             label6.DragDrop += common_DragDrop;
             label6.DragEnter += common_DragEnter;
             label6.MouseDown += common_MouseDown;
@@ -160,11 +170,12 @@ namespace SortingPractice
             label7.AllowDrop = true;
             label7.BackColor = System.Drawing.Color.Yellow;
             label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            label7.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label7.Location = new System.Drawing.Point(858, 18);
+            label7.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold);
+            label7.Location = new System.Drawing.Point(871, 18);
             label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(105, 102);
+            label7.Size = new System.Drawing.Size(117, 102);
             label7.TabIndex = 0;
+            label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             label7.DragDrop += common_DragDrop;
             label7.DragEnter += common_DragEnter;
             label7.MouseDown += common_MouseDown;
@@ -174,11 +185,12 @@ namespace SortingPractice
             label8.AllowDrop = true;
             label8.BackColor = System.Drawing.Color.Yellow;
             label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            label8.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label8.Location = new System.Drawing.Point(994, 18);
+            label8.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold);
+            label8.Location = new System.Drawing.Point(1007, 18);
             label8.Name = "label8";
-            label8.Size = new System.Drawing.Size(105, 102);
+            label8.Size = new System.Drawing.Size(117, 102);
             label8.TabIndex = 0;
+            label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             label8.DragDrop += common_DragDrop;
             label8.DragEnter += common_DragEnter;
             label8.MouseDown += common_MouseDown;
@@ -188,11 +200,12 @@ namespace SortingPractice
             label9.AllowDrop = true;
             label9.BackColor = System.Drawing.Color.Yellow;
             label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            label9.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label9.Location = new System.Drawing.Point(1130, 18);
+            label9.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold);
+            label9.Location = new System.Drawing.Point(1143, 18);
             label9.Name = "label9";
-            label9.Size = new System.Drawing.Size(105, 102);
+            label9.Size = new System.Drawing.Size(117, 102);
             label9.TabIndex = 0;
+            label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             label9.DragDrop += common_DragDrop;
             label9.DragEnter += common_DragEnter;
             label9.MouseDown += common_MouseDown;
@@ -202,11 +215,12 @@ namespace SortingPractice
             label10.AllowDrop = true;
             label10.BackColor = System.Drawing.Color.Yellow;
             label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            label10.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label10.Location = new System.Drawing.Point(1266, 18);
+            label10.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold);
+            label10.Location = new System.Drawing.Point(1279, 18);
             label10.Name = "label10";
-            label10.Size = new System.Drawing.Size(105, 102);
+            label10.Size = new System.Drawing.Size(117, 102);
             label10.TabIndex = 0;
+            label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             label10.DragDrop += common_DragDrop;
             label10.DragEnter += common_DragEnter;
             label10.MouseDown += common_MouseDown;
@@ -214,7 +228,8 @@ namespace SortingPractice
             // label11
             // 
             label11.AutoSize = true;
-            label11.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label11.BackColor = System.Drawing.Color.White;
+            label11.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold);
             label11.Location = new System.Drawing.Point(165, 25);
             label11.Name = "label11";
             label11.Size = new System.Drawing.Size(43, 50);
@@ -225,7 +240,8 @@ namespace SortingPractice
             // label12
             // 
             label12.AutoSize = true;
-            label12.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label12.BackColor = System.Drawing.Color.White;
+            label12.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold);
             label12.Location = new System.Drawing.Point(301, 25);
             label12.Name = "label12";
             label12.Size = new System.Drawing.Size(43, 50);
@@ -236,7 +252,8 @@ namespace SortingPractice
             // label13
             // 
             label13.AutoSize = true;
-            label13.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label13.BackColor = System.Drawing.Color.White;
+            label13.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold);
             label13.Location = new System.Drawing.Point(441, 25);
             label13.Name = "label13";
             label13.Size = new System.Drawing.Size(43, 50);
@@ -247,7 +264,8 @@ namespace SortingPractice
             // label14
             // 
             label14.AutoSize = true;
-            label14.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label14.BackColor = System.Drawing.Color.White;
+            label14.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold);
             label14.Location = new System.Drawing.Point(571, 25);
             label14.Name = "label14";
             label14.Size = new System.Drawing.Size(43, 50);
@@ -258,7 +276,8 @@ namespace SortingPractice
             // label15
             // 
             label15.AutoSize = true;
-            label15.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label15.BackColor = System.Drawing.Color.White;
+            label15.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold);
             label15.Location = new System.Drawing.Point(707, 25);
             label15.Name = "label15";
             label15.Size = new System.Drawing.Size(43, 50);
@@ -269,7 +288,8 @@ namespace SortingPractice
             // label16
             // 
             label16.AutoSize = true;
-            label16.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label16.BackColor = System.Drawing.Color.White;
+            label16.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold);
             label16.Location = new System.Drawing.Point(843, 25);
             label16.Name = "label16";
             label16.Size = new System.Drawing.Size(43, 50);
@@ -280,7 +300,8 @@ namespace SortingPractice
             // label17
             // 
             label17.AutoSize = true;
-            label17.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label17.BackColor = System.Drawing.Color.White;
+            label17.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold);
             label17.Location = new System.Drawing.Point(979, 25);
             label17.Name = "label17";
             label17.Size = new System.Drawing.Size(43, 50);
@@ -291,7 +312,8 @@ namespace SortingPractice
             // label18
             // 
             label18.AutoSize = true;
-            label18.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label18.BackColor = System.Drawing.Color.White;
+            label18.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold);
             label18.Location = new System.Drawing.Point(1115, 25);
             label18.Name = "label18";
             label18.Size = new System.Drawing.Size(43, 50);
@@ -302,7 +324,8 @@ namespace SortingPractice
             // label19
             // 
             label19.AutoSize = true;
-            label19.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label19.BackColor = System.Drawing.Color.White;
+            label19.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold);
             label19.Location = new System.Drawing.Point(1244, 25);
             label19.Name = "label19";
             label19.Size = new System.Drawing.Size(43, 50);
@@ -313,7 +336,8 @@ namespace SortingPractice
             // label20
             // 
             label20.AutoSize = true;
-            label20.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label20.BackColor = System.Drawing.Color.White;
+            label20.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold);
             label20.Location = new System.Drawing.Point(1387, 25);
             label20.Name = "label20";
             label20.Size = new System.Drawing.Size(43, 50);
@@ -347,13 +371,13 @@ namespace SortingPractice
             toBeSorted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             toBeSorted.Name = "toBeSorted";
             toBeSorted.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            toBeSorted.Size = new System.Drawing.Size(1426, 290);
+            toBeSorted.Size = new System.Drawing.Size(1426, 285);
             toBeSorted.TabIndex = 2;
             toBeSorted.TabStop = false;
             // 
             // button10
             // 
-            button10.Location = new System.Drawing.Point(1307, 142);
+            button10.Location = new System.Drawing.Point(1317, 149);
             button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             button10.Name = "button10";
             button10.Size = new System.Drawing.Size(31, 29);
@@ -363,7 +387,7 @@ namespace SortingPractice
             // 
             // button9
             // 
-            button9.Location = new System.Drawing.Point(1171, 142);
+            button9.Location = new System.Drawing.Point(1174, 149);
             button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             button9.Name = "button9";
             button9.Size = new System.Drawing.Size(31, 29);
@@ -373,7 +397,7 @@ namespace SortingPractice
             // 
             // button8
             // 
-            button8.Location = new System.Drawing.Point(1035, 142);
+            button8.Location = new System.Drawing.Point(1045, 149);
             button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             button8.Name = "button8";
             button8.Size = new System.Drawing.Size(31, 29);
@@ -383,7 +407,7 @@ namespace SortingPractice
             // 
             // button7
             // 
-            button7.Location = new System.Drawing.Point(899, 142);
+            button7.Location = new System.Drawing.Point(909, 149);
             button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             button7.Name = "button7";
             button7.Size = new System.Drawing.Size(31, 29);
@@ -403,7 +427,7 @@ namespace SortingPractice
             // 
             // button5
             // 
-            button5.Location = new System.Drawing.Point(761, 149);
+            button5.Location = new System.Drawing.Point(773, 149);
             button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             button5.Name = "button5";
             button5.Size = new System.Drawing.Size(31, 29);
@@ -413,7 +437,7 @@ namespace SortingPractice
             // 
             // button4
             // 
-            button4.Location = new System.Drawing.Point(625, 149);
+            button4.Location = new System.Drawing.Point(637, 149);
             button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             button4.Name = "button4";
             button4.Size = new System.Drawing.Size(31, 29);
@@ -423,7 +447,7 @@ namespace SortingPractice
             // 
             // button3
             // 
-            button3.Location = new System.Drawing.Point(219, 142);
+            button3.Location = new System.Drawing.Point(231, 149);
             button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             button3.Name = "button3";
             button3.Size = new System.Drawing.Size(31, 29);
@@ -433,7 +457,7 @@ namespace SortingPractice
             // 
             // button2
             // 
-            button2.Location = new System.Drawing.Point(83, 142);
+            button2.Location = new System.Drawing.Point(95, 149);
             button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             button2.Name = "button2";
             button2.Size = new System.Drawing.Size(31, 29);
@@ -443,7 +467,7 @@ namespace SortingPractice
             // 
             // button1
             // 
-            button1.Location = new System.Drawing.Point(489, 149);
+            button1.Location = new System.Drawing.Point(501, 149);
             button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new System.Drawing.Size(31, 29);
@@ -453,7 +477,7 @@ namespace SortingPractice
             // 
             // reset
             // 
-            reset.Location = new System.Drawing.Point(392, 522);
+            reset.Location = new System.Drawing.Point(81, 620);
             reset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             reset.Name = "reset";
             reset.Size = new System.Drawing.Size(82, 22);
@@ -467,7 +491,7 @@ namespace SortingPractice
             temp.AllowDrop = true;
             temp.BackColor = System.Drawing.Color.LawnGreen;
             temp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            temp.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            temp.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold);
             temp.Location = new System.Drawing.Point(1363, 496);
             temp.Name = "temp";
             temp.Size = new System.Drawing.Size(115, 102);
@@ -525,12 +549,49 @@ namespace SortingPractice
             // 
             // comboBox1
             // 
-            comboBox1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            comboBox1.Font = new System.Drawing.Font("Segoe UI", 20.25F);
             comboBox1.FormattingEnabled = true;
             comboBox1.Location = new System.Drawing.Point(1244, 432);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new System.Drawing.Size(314, 45);
             comboBox1.TabIndex = 7;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(radioButton3);
+            groupBox2.Controls.Add(radioButton4);
+            groupBox2.Location = new System.Drawing.Point(330, 522);
+            groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            groupBox2.Size = new System.Drawing.Size(219, 94);
+            groupBox2.TabIndex = 5;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Value Type";
+            // 
+            // radioButton3
+            // 
+            radioButton3.AutoSize = true;
+            radioButton3.Location = new System.Drawing.Point(8, 57);
+            radioButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            radioButton3.Name = "radioButton3";
+            radioButton3.Size = new System.Drawing.Size(74, 19);
+            radioButton3.TabIndex = 0;
+            radioButton3.Text = "Numbers";
+            radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            radioButton4.AutoSize = true;
+            radioButton4.Checked = true;
+            radioButton4.Location = new System.Drawing.Point(8, 26);
+            radioButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            radioButton4.Name = "radioButton4";
+            radioButton4.Size = new System.Drawing.Size(60, 19);
+            radioButton4.TabIndex = 0;
+            radioButton4.TabStop = true;
+            radioButton4.Text = "Letters";
+            radioButton4.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -539,6 +600,7 @@ namespace SortingPractice
             ClientSize = new System.Drawing.Size(1689, 667);
             Controls.Add(comboBox1);
             Controls.Add(label22);
+            Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(temp);
             Controls.Add(reset);
@@ -560,6 +622,8 @@ namespace SortingPractice
             toBeSorted.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -604,6 +668,9 @@ namespace SortingPractice
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
     }
 }
 

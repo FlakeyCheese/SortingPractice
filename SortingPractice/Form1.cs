@@ -16,13 +16,22 @@ namespace SortingPractice
         {
             InitializeComponent();
         }
-        public char generateUpper()
+        public object generateValues()
         {
-            //Random Uppercase letter:
-            Random rnd = new Random();
-            int ascii_index = rnd.Next(65, 91); //ASCII character codes 65-90
-            char myRandomUpperCase = Convert.ToChar(ascii_index); //produces any char A-Z
-            return myRandomUpperCase;
+            if (radioButton4.Checked)
+            {
+                //Random Uppercase letter:
+                Random rnd = new Random();
+                int ascii_index = rnd.Next(65, 91); //ASCII character codes 65-90
+                char myRandomUpperCase = Convert.ToChar(ascii_index); //produces any char A-Z
+                return myRandomUpperCase;
+            }
+            else
+            {
+                Random rnd = new Random();
+                int value = rnd.Next(1, 100);
+                return value;
+            }
         }
         public void loadUp()
         {
@@ -34,7 +43,7 @@ namespace SortingPractice
                     {
                         if (lab is Label)
                         {
-                            lab.Text = generateUpper().ToString();
+                            lab.Text = generateValues().ToString();
                         }
                     }
                 }
@@ -80,9 +89,16 @@ namespace SortingPractice
         {
             Label lbl = sender as Label;
             if (lbl.ForeColor == Color.Black)
-            { lbl.ForeColor = Color.Red; }
+            { 
+                lbl.ForeColor = Color.White;
+                lbl.BackColor = Color.Black;
+
+            }
             else
-            { lbl.ForeColor = Color.Black; }
+            { 
+                lbl.ForeColor = Color.Black;
+                lbl.BackColor = Color.White;
+            }
         }
 
         private void toggleBackground(object sender, MouseEventArgs e)
