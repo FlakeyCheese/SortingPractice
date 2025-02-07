@@ -89,13 +89,13 @@ namespace SortingPractice
         {
             Label lbl = sender as Label;
             if (lbl.ForeColor == Color.Black)
-            { 
+            {
                 lbl.ForeColor = Color.White;
                 lbl.BackColor = Color.Black;
 
             }
             else
-            { 
+            {
                 lbl.ForeColor = Color.Black;
                 lbl.BackColor = Color.White;
             }
@@ -150,6 +150,12 @@ namespace SortingPractice
         private void temp_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            MergeSort mergeSort = new MergeSort();
+            mergeSort.Show();
         }
     }
 }
