@@ -85,6 +85,7 @@
             groupBox1 = new System.Windows.Forms.GroupBox();
             label26 = new System.Windows.Forms.Label();
             label50 = new System.Windows.Forms.Label();
+            button1 = new System.Windows.Forms.Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -947,11 +948,22 @@
             label50.DragEnter += common_drag_Enter;
             label50.MouseDown += common_Mouse_Down;
             // 
+            // button1
+            // 
+            button1.Location = new System.Drawing.Point(268, 26);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(75, 23);
+            button1.TabIndex = 10;
+            button1.Text = "Restart";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // MergeSort
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(1684, 667);
+            Controls.Add(button1);
             Controls.Add(groupBox1);
             Controls.Add(label40);
             Controls.Add(label48);
@@ -1067,5 +1079,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Button button1;
     }
 }

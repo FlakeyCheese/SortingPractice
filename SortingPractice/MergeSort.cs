@@ -38,7 +38,7 @@ namespace SortingPractice
             if (e.Button == MouseButtons.Left)
             {
                 //invoke the drag and drop operation
-                DoDragDrop(lbl.Text, DragDropEffects.Copy);                
+                DoDragDrop(lbl.Text, DragDropEffects.Copy);
             }
         }
         public void loadUp()
@@ -61,7 +61,15 @@ namespace SortingPractice
         {
             Random rnd = new Random();
             int value = rnd.Next(1, 100);
-            return value;            
+            return value;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            foreach(Control control in this.Controls)
+                if (control is Label)
+                {  control.Text = ""; }
+            loadUp();
         }
     }
 }
