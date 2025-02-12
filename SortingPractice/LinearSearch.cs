@@ -16,6 +16,7 @@ namespace SortingPractice
         public LinearSearch()
         {
             InitializeComponent();
+            sortControls();
             loadUp();
         }
 
@@ -89,8 +90,19 @@ namespace SortingPractice
                 }
             }
             count++;
-            if (count == 12)
+            if (count == 13)
                 lbl_result.Text = "item not found";
+        }
+        public void sortControls() //sort the controls into tag order
+        {
+            var mySortedList = groupBox1.Controls
+            .Cast<Control>()
+            .OrderBy(x => Convert.ToInt32(x.Tag))
+            .ToArray();
+            groupBox1.Controls.Clear();
+            groupBox1.Controls.AddRange(mySortedList);
+
+
         }
     }
 }

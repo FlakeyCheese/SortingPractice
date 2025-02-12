@@ -55,7 +55,7 @@
             label16 = new System.Windows.Forms.Label();
             label15 = new System.Windows.Forms.Label();
             button1 = new System.Windows.Forms.Button();
-            textBox1 = new System.Windows.Forms.TextBox();
+            txt_searchItem = new System.Windows.Forms.TextBox();
             label26 = new System.Windows.Forms.Label();
             button2 = new System.Windows.Forms.Button();
             label27 = new System.Windows.Forms.Label();
@@ -64,6 +64,8 @@
             lbl_left = new System.Windows.Forms.Label();
             lbl_middle = new System.Windows.Forms.Label();
             lbl_right = new System.Windows.Forms.Label();
+            lbl_result = new System.Windows.Forms.Label();
+            btn_step = new System.Windows.Forms.Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -71,7 +73,7 @@
             // 
             label25.AutoSize = true;
             label25.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            label25.Location = new System.Drawing.Point(731, 9);
+            label25.Location = new System.Drawing.Point(666, 9);
             label25.Name = "label25";
             label25.Size = new System.Drawing.Size(134, 25);
             label25.TabIndex = 4;
@@ -377,7 +379,7 @@
             // button1
             // 
             button1.Font = new System.Drawing.Font("Segoe UI", 16F);
-            button1.Location = new System.Drawing.Point(667, 594);
+            button1.Location = new System.Drawing.Point(666, 551);
             button1.Name = "button1";
             button1.Size = new System.Drawing.Size(116, 38);
             button1.TabIndex = 22;
@@ -385,22 +387,22 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // textBox1
+            // txt_searchItem
             // 
-            textBox1.BackColor = System.Drawing.Color.FromArgb(128, 255, 128);
-            textBox1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold);
-            textBox1.Location = new System.Drawing.Point(667, 517);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new System.Drawing.Size(116, 71);
-            textBox1.TabIndex = 21;
-            textBox1.Text = "0";
-            textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            txt_searchItem.BackColor = System.Drawing.Color.FromArgb(128, 255, 128);
+            txt_searchItem.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold);
+            txt_searchItem.Location = new System.Drawing.Point(666, 474);
+            txt_searchItem.Name = "txt_searchItem";
+            txt_searchItem.Size = new System.Drawing.Size(116, 71);
+            txt_searchItem.TabIndex = 21;
+            txt_searchItem.Text = "0";
+            txt_searchItem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label26
             // 
             label26.AutoSize = true;
             label26.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            label26.Location = new System.Drawing.Point(667, 489);
+            label26.Location = new System.Drawing.Point(666, 446);
             label26.Name = "label26";
             label26.Size = new System.Drawing.Size(116, 25);
             label26.TabIndex = 20;
@@ -477,14 +479,37 @@
             lbl_right.TabIndex = 4;
             lbl_right.Text = "0";
             // 
+            // lbl_result
+            // 
+            lbl_result.AutoSize = true;
+            lbl_result.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            lbl_result.Location = new System.Drawing.Point(678, 346);
+            lbl_result.Name = "lbl_result";
+            lbl_result.Size = new System.Drawing.Size(66, 25);
+            lbl_result.TabIndex = 4;
+            lbl_result.Text = "Result";
+            // 
+            // btn_step
+            // 
+            btn_step.Enabled = false;
+            btn_step.Font = new System.Drawing.Font("Segoe UI", 16F);
+            btn_step.Location = new System.Drawing.Point(667, 595);
+            btn_step.Name = "btn_step";
+            btn_step.Size = new System.Drawing.Size(116, 38);
+            btn_step.TabIndex = 22;
+            btn_step.Text = "Step";
+            btn_step.UseVisualStyleBackColor = true;
+            btn_step.Click += btn_step_Click;
+            // 
             // BinarySearch
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(1576, 654);
             Controls.Add(button2);
+            Controls.Add(btn_step);
             Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(txt_searchItem);
             Controls.Add(label26);
             Controls.Add(label24);
             Controls.Add(groupBox1);
@@ -505,6 +530,7 @@
             Controls.Add(lbl_middle);
             Controls.Add(lbl_left);
             Controls.Add(label27);
+            Controls.Add(lbl_result);
             Controls.Add(label25);
             Name = "BinarySearch";
             Text = "BinarySearch";
@@ -542,7 +568,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_searchItem;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label27;
@@ -551,5 +577,7 @@
         private System.Windows.Forms.Label lbl_left;
         private System.Windows.Forms.Label lbl_middle;
         private System.Windows.Forms.Label lbl_right;
+        private System.Windows.Forms.Label lbl_result;
+        private System.Windows.Forms.Button btn_step;
     }
 }
