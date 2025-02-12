@@ -157,5 +157,17 @@ namespace SortingPractice
             MergeSort mergeSort = new MergeSort();
             mergeSort.Show();
         }
+
+        private void button12_Click(object sender, EventArgs e)//launch Linear Search
+        {
+            LinearSearch linearSearch = new LinearSearch();
+            linearSearch.Show();
+        }
+
+        private void button13_Click(object sender, EventArgs e)//launch binary search
+        {
+            BinarySearch binarySearch = new BinarySearch();
+            binarySearch.Show();
+        }
     }
 }
