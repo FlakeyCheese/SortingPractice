@@ -74,7 +74,7 @@ namespace SortingPractice
             loadUp();
 
             button1.Enabled = true;
-            btn_step.Enabled = false;
+            
             foreach (Control gb in this.Controls)
             {
                 if (gb is GroupBox)
