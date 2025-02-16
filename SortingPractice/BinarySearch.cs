@@ -15,7 +15,7 @@ namespace SortingPractice
     {
         
         int left = 0;
-        int right = 11;
+        int right = 21;
         int middle;
         int searchItem;
         int foundItem;
@@ -53,7 +53,7 @@ namespace SortingPractice
         public int generateValues()
         {
             Random rnd = new Random();
-            int value = rnd.Next(1, 12);
+            int value = rnd.Next(1, 7);
             return value;
         }
 
@@ -62,9 +62,15 @@ namespace SortingPractice
             delay = Convert.ToInt32(numericUpDown1.Value * 1000);
             searchItem = Convert.ToInt32(txt_searchItem.Text);
             if (search(left,right)==-1)
-            { lbl_result.Text = "Item not found in array"; }
+            {
+                
+                richTextBox1.AppendText("Item not found in array\n");
+            }
             else
-                { lbl_result.Text = "Item found at location " + middle.ToString(); }
+                { 
+                
+                richTextBox1.AppendText("Item found at location "+ middle.ToString());
+            }
             
         }
 
@@ -85,6 +91,12 @@ namespace SortingPractice
                     }
                 }
             }
+            lbl_left.Text = 0.ToString();
+            lbl_middle.Text = 0.ToString();
+            lbl_right.Text = 0.ToString();
+            
+            richTextBox1.Clear();
+
         }
 
         private void btn_step_Click(object sender, EventArgs e)//step through the search
@@ -107,7 +119,7 @@ namespace SortingPractice
         }
         public int search(int left, int right)//recursive binary search
         { Thread.Sleep(delay);
-            for (int i = 0;i<12;i++)
+            for (int i = 0;i<22;i++)
             { 
                 groupBox1.Controls[i].BackColor = Color.Yellow;
                 groupBox1.Controls[i].Refresh();
@@ -120,7 +132,7 @@ namespace SortingPractice
                     lbl_right.Text = right.ToString();
                      lbl_right.Refresh();
                     int tempLeft = left;
-                    if (tempLeft > 11) {  tempLeft = 11; }
+                    if (tempLeft > 21) {  tempLeft = 21; }
                     groupBox1.Controls[tempLeft].BackColor = Color.LightGreen;
                     groupBox1.Controls[tempLeft].Refresh();
                     int tempRight = right;
@@ -140,11 +152,20 @@ namespace SortingPractice
 
 
                 if (searchItem == foundItem)
-                { return middle; }
+                {
+                    richTextBox1.AppendText ( "Item found at the middle pointer\n");
+                    richTextBox1.Refresh();
+                    return middle;
+                }
 
                 if (foundItem > searchItem)
-                { return search(left, middle - 1); }
-
+                {
+                    richTextBox1.AppendText( "Discard the right hand side of the array\n");
+                    richTextBox1.Refresh();
+                    return search(left, middle - 1);
+                }
+                richTextBox1.AppendText( "discard the left hand side of the array\n");
+                richTextBox1.Refresh();
                 return search(middle + 1, right);
             }
             return -1;
