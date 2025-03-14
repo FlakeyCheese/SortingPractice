@@ -15,7 +15,7 @@ namespace SortingPractice
     {
         
         int left = 0;
-        int right = 21;
+        int right = 31;
         int middle;
         int searchItem;
         int foundItem;
@@ -119,7 +119,7 @@ namespace SortingPractice
         }
         public int search(int left, int right)//recursive binary search
         { Thread.Sleep(delay);
-            for (int i = 0;i<22;i++)
+            for (int i = 0;i<32;i++)
             { 
                 groupBox1.Controls[i].BackColor = Color.Yellow;
                 groupBox1.Controls[i].Refresh();
@@ -132,7 +132,7 @@ namespace SortingPractice
                     lbl_right.Text = right.ToString();
                      lbl_right.Refresh();
                     int tempLeft = left;
-                    if (tempLeft > 21) {  tempLeft = 21; }
+                    if (tempLeft > 31) {  tempLeft = 31; }
                     groupBox1.Controls[tempLeft].BackColor = Color.LightGreen;
                     groupBox1.Controls[tempLeft].Refresh();
                     int tempRight = right;
