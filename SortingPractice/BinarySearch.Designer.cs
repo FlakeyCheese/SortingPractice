@@ -111,6 +111,7 @@
             label70 = new System.Windows.Forms.Label();
             label72 = new System.Windows.Forms.Label();
             label73 = new System.Windows.Forms.Label();
+            label74 = new System.Windows.Forms.Label();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
@@ -749,11 +750,11 @@
             // 
             label27.AutoSize = true;
             label27.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            label27.Location = new System.Drawing.Point(24, 299);
+            label27.Location = new System.Drawing.Point(897, 298);
             label27.Name = "label27";
-            label27.Size = new System.Drawing.Size(134, 25);
+            label27.Size = new System.Drawing.Size(180, 25);
             label27.TabIndex = 4;
-            label27.Text = "Left Pointer =";
+            label27.Text = "Comparison Count";
             // 
             // label29
             // 
@@ -1077,6 +1078,16 @@
             label73.TabIndex = 7;
             label73.Text = "Max comparison = log n +1";
             // 
+            // label74
+            // 
+            label74.AutoSize = true;
+            label74.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            label74.Location = new System.Drawing.Point(1088, 298);
+            label74.Name = "label74";
+            label74.Size = new System.Drawing.Size(23, 25);
+            label74.TabIndex = 10;
+            label74.Text = "0";
+            // 
             // BinarySearch
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1113,6 +1124,7 @@
             Controls.Add(label44);
             Controls.Add(label43);
             Controls.Add(label23);
+            Controls.Add(label74);
             Controls.Add(label42);
             Controls.Add(label22);
             Controls.Add(label40);
@@ -1226,5 +1238,6 @@
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label74;
     }
 }

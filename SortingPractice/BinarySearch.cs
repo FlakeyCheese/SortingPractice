@@ -20,6 +20,7 @@ namespace SortingPractice
         int searchItem;
         int foundItem;
         int delay;
+        int compCount = 0;
         public BinarySearch()
         {
             InitializeComponent();
@@ -94,7 +95,7 @@ namespace SortingPractice
             lbl_left.Text = 0.ToString();
             lbl_middle.Text = 0.ToString();
             lbl_right.Text = 0.ToString();
-            
+            label74.Text ="0";
             richTextBox1.Clear();
 
         }
@@ -150,7 +151,9 @@ namespace SortingPractice
                 groupBox1.Controls[middle].BackColor = Color.Violet;
                 groupBox1.Controls[middle].Refresh();
 
-
+                compCount++;
+                label74.Text = compCount.ToString();
+                label74.Refresh();
                 if (searchItem == foundItem)
                 {
                     richTextBox1.AppendText ( "Item found at the middle pointer\n");
