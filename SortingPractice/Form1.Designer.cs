@@ -602,7 +602,7 @@ namespace SortingPractice
             // 
             // button11
             // 
-            button11.Location = new System.Drawing.Point(330, 620);
+            button11.Location = new System.Drawing.Point(1568, 200);
             button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             button11.Name = "button11";
             button11.Size = new System.Drawing.Size(82, 22);
